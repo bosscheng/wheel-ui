@@ -1,0 +1,92 @@
+// 复选框
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  *left: -999px;
+}
+
+label.ui-checkbox,label.ui-checkbox-24{
+  display: inline-block;
+  float: left;
+  margin: 12px 0;
+  height: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  overflow: hidden;
+
+  /*i {
+    box-sizing: border-box;
+    float: left;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    margin: 4px 8px 0 0;
+    background-color: #fff;
+    -webkit-animation: bounceIn .2s;
+    animation: bounceIn .2s;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+    position: relative;
+
+    &.on {
+      background-color: #4cbd74;
+      border-color: #4cbd74;
+      &:before{
+        content: '';
+        width: 3px;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 3px;
+        top: 6px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0.5px 0.5px #ffffff;
+      }
+
+      &:after{
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 2px;
+        left: 5px;
+        top: 6px;
+        background-color: #ffffff;
+        transform: rotate(-45deg);
+        box-shadow: 0 0 0.5px 0.5px #ffffff;
+      }
+
+    }
+
+    &.disabled {
+      border-color: #ccc;
+      opacity: .38;
+    }
+  }*/
+
+  i {
+    @include box-sizing;
+    float: left;
+    margin-right: 8px;
+    color: $green-color;
+  }
+
+
+
+  &.disabled{
+    cursor: default;
+    color: #ccc;
+
+    i{
+      opacity: .38;
+    }
+  }
+
+  + label.ui-checkbox,+ label.ui-checkbox-24{
+    margin-left: 24px;
+  }
+}
+
+label.ui-checkbox-24{
+  margin: 8px 0;
+}

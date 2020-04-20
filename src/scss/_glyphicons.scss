@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'fth';
+  src: url('../fonts/fth.eot?y0t4rx');
+  src: url('../fonts/fth.eot?y0t4rx#iefix') format('embedded-opentype'),
+  url('../fonts/fth.ttf?y0t4rx') format('truetype'),
+  url('../fonts/fth.woff?y0t4rx') format('woff'),
+  url('../fonts/fth.svg?y0t4rx#fth') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fth' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 16px; // 默认系统字体大小
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+}
+
+// 大图标
+.icon-big {
+  font-size: 32px;
+}
+
+// 小图标
+/*
+在chrome如果想要实现 这个必须触发 float 属性
+*/
+.icon-sml {
+  font-size: 8px;
+  -webkit-transform: scale(.67);
+  -o-transform: scale(1);
+}
+
+@include icons();
+

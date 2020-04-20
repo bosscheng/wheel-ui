@@ -1,0 +1,46 @@
+/* Google prettify style */
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .prettyprint .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+.prettyprint {
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+.prettyprint.linenums {
+  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+  -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+  box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+.prettyprint {
+  margin-top: -1px;
+}
+
+pre, code {
+  font: 12px Monaco, Menlo, Consolas, "Courier New", monospace;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.prettyprint code {
+  border: none;
+  border-radius: 0;
+}
+
+
+code {
+  margin: 0 5px;
+  padding: 2px 4px;
+  border: 1px solid #e1e1e8;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  color: #d14;
+}

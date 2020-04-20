@@ -1,0 +1,92 @@
+.pager {
+  height: 16px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 16px 0 8px 0;
+  a, span {
+    display: inline-block;
+    height: 20px;
+    padding: 0 7px;
+    margin: 0 2px;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  span {
+    height: 20px;
+    text-align: center;
+  }
+  input {
+    display: inline-block;
+    height: 16px;
+    text-align: center;
+    margin: 0 4px;
+    color: #333;
+    font-size: 12px;
+    line-height: 16px;
+    width: 22px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    &:focus {
+      border-color: #4CBD71;
+    }
+  }
+  a:hover, .page-now {
+    color: #fff;
+    background-color: #4BBD71;
+    text-decoration: none;
+  }
+  a.greypage {
+    color: #ccc;
+    cursor: default;
+    background-color: transparent;
+  }
+}
+
+.newPager {
+  ul {
+    display: block;
+    height: 32px;
+    .item {
+      float: left;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 12px;
+      border: 1px solid $border-color;
+      margin-left: -1px;
+      a.num {
+        display: inline-block;
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      a:hover {
+        background-color: $pale-green-color;
+        color: $black-color;
+      }
+    }
+    li.active {
+      z-index: 1;
+      background: $green-color;
+      border-color: $green-color;
+      cursor: default;
+      text-decoration: none;
+      span {
+        color: $white-color;
+        cursor: default;
+      }
+    }
+    .dot {
+      border: none;
+      line-height: 30px;
+      width: 30px;
+      cursor: default;
+    }
+  }
+}
+

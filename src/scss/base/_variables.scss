@@ -1,0 +1,117 @@
+//  项目里面的所有的 定义变量的地方，为了方便统一管理，所有的变量 都是统一在这里定义的。
+//
+//
+//
+//
+
+// 白色
+$white-color: #fff !default;
+// 黑色
+$black-color: #333 !default;
+// 绿色
+$green-color: #4cbd74 !default;
+// 淡绿色
+$pale-green-color: #edfdf2 !default;
+// 红色
+$red-color: #ff0000 !default;
+// 蓝色
+$blur-color: #0078ff !default;
+// 橘黄色
+$orange-color: #ff9800 !default;
+// 深绿色
+$deep-orange-color: #ff6f00 !default;
+// 灰色
+$gray-color: #ccc !default;
+
+// border边框描边颜色
+$border-color: #f2f2f2;
+//
+$color-note: #999999 !default;
+
+$color-disabled: $gray-color;
+
+$color-success: $green-color;
+$color-error: $red-color;
+$color-link-orange: $orange-color;
+$color-link-blue: $blur-color;
+$color-read: $black-color;
+
+$color-read-weak: #666666 !default;
+
+// button background color
+$btn-bg-disabled: $color-disabled;
+$btn-normal-bg: $orange-color;
+$btn-normal-bg-hover: $deep-orange-color;
+$btn-normal-bg-active: #e68a00 !default;
+$btn-special-bg: $white-color;
+$btn-special-bg-hover: $btn-special-bg;
+$btn-special-bg-active: #eee !default;
+
+// button border
+$btn-normal-border: 1px solid $btn-normal-bg;
+$btn-normal-border-active: 1px solid $btn-normal-bg-active;
+$btn-disabled-border-active: 1px solid $btn-bg-disabled;
+$btn-special-border: 1px solid $btn-bg-disabled;
+$btn-hover-box-shadow: 0 2px 4px rgba(0, 51, 0, 0.2);
+$btn-border-radius-size: 4px;
+$btn-border-width: 0;
+
+// button height
+$btn-big-height: 40px;
+$btn-normal-height: 32px;
+$btn-small-height: 24px;
+
+// font color/ font size
+$font-normal-color: $white-color;
+$font-special-color: $black-color;
+$font-disabled-color: $white-color;
+$font-special-size: 14px !default;
+$font-normal-size: 12px !default;
+$font-normal-line-height: 2 !default;
+
+$font-size-h1: 24px !default;
+$font-size-h2: 18px !default;
+$font-size-h3: 14px !default;
+
+// buttons
+$btn-padding-x: 1rem;
+$btn-padding-y: .375em;
+$btn-font-weight: normal !default;
+
+// link
+
+// normal
+// blue
+// orange
+$link-color-normal: $color-read;
+$link-color-hover-normal: $btn-normal-bg-hover;
+$link-color-blue: $color-link-blue;
+$link-color-orange: $color-link-orange;
+$link-color-hover-orange: $btn-normal-bg-hover;
+
+// breadcrumbs
+
+$breadcrumb-divider: '>' !default;
+
+// components
+
+// forms
+$form-group-bottom-length: 8px;
+$form-group-level-length: 96px;
+$form-item-length: 544px;
+$form-item-narrow-length: 448px;
+$form-group-narrow-level-length: 224px;
+
+$form-error-tip-bg-color: #fff7f7;
+$form-error-tip-border-color: #ffd0d0;
+
+$form-tip-bg-color: #f6fff9;
+$form-tip-border-color: #bfe4bf;
+
+//
+
+//
+$text-border-radius: 3px !default;
+
+
+

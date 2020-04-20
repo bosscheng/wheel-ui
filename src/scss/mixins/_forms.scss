@@ -1,0 +1,29 @@
+
+@mixin tip($color,$background-color,$border-color){
+  display: inline-block;
+  padding: 7px 8px;
+  line-height: 16px;
+  color: $color;
+  background-color: $background-color;
+  position: relative;
+  border: 1px solid $border-color;
+  border-radius: $text-border-radius;
+
+//  &:before, &:after {
+//    position: absolute;
+//    content: "";
+//    left: -9px;
+//    top: 50%;
+//    margin-top: -4px;
+//    width: 0;
+//    height: 0;
+//    border-width: 4px;
+//    border-style: solid;
+//    border-color: transparent $border-color transparent transparent;
+//  }
+//
+//  &:after {
+//    border-color: transparent $background-color transparent transparent;
+//    left: -8px;
+//  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/prettify.css"/>
+    <link rel="stylesheet" href="../scss/focusteach.css"/>
+    <script src="./js/run_prettify.js"></script>
+    <title>Base</title>
+</head>
+<body onload="prettyPrint();">
+<div id="header">
+    <div class="grid">
+        <h1 class="logo"><a href="/index">焦點智慧教室</a></h1>
+        <ul>
+            <li><a href="./index.html">基础</a></li>
+            <li><a href="./html/ui.html">组件</a></li>
+            <li><a href="./html/component.html">插件</a></li>
+            <li><a href="">sass功能</a></li>
+            <li><a href="">动画</a></li>
+        </ul>
+    </div>
+</div>
+<div class="main" id="main">
+    <div class="home home grid">
+        <div class="aside">
+            <div class="menu box">
+                <ul class="menu-lst">
+                    <li class="current"><a href="#base_explanation">说明</a></li>
+                    <li><a href="#base_word">文字样式</a></li>
+                    <li><a href="#base_color">链接文字</a></li>
+                    <li><a href="#base_icon">图标</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box list-wrap">
+                <div class="expand">
+                    <h2 class="h2" id="base_explanation">
+                        说明
+                    </h2>
+                    <h4 class="h4" id="index_base">base</h4>
+
+                    <p>网站核心公共样式，所有应用共用，专人维护，不能随意修改。</p>
+                    <h4 class="h4" id="index_ui">ui</h4>
+
+                    <p>网站全局公共样式，如按钮、提示等。所有应用共用，专人维护，不能随意修改。通过基本参数设置实现不同应用的定制。</p>
+                    <h4 class="h4" id="index_component">component</h4>
+
+                    <p>网站业务组件类样式，如头部、导航、底部、分页等，根据不同应用编写，专人维护。</p>
+                    <h4 class="h4" id="index_module">module</h4>
+
+                    <p>网站业务模块样式，模块样式层级和文件个数不限，但要遵循前端规范。较简单的模块，可以只有一个单独的css文件。对于较复杂的模块，如中文产品，可单独建立模块级公共样式和独立的页面级样式。</p>
+
+                    <p class="red">注意：新增样式文件要遵循此模块划分方法。一般维护，只需对module内文件进行增改。</p>
+                </div>
+                <p class="dividing-line">我是邪恶的分割线</p>
+                <div class="expand">
+                    <h2 class="h2" id="base_word">
+                        文字样式
+                    </h2>
+
+                    <div class="example">
+                        <h1>我是h1的显示样式 我是标题1 ----24px </h1>
+
+                        <h2>我是h2的显示样式 我是标题2 ----18px</h2>
+
+                        <h3>我是h3的显示样式 我是标题3 ----14px</h3>
+
+                        <p>我是正文显示的效果 我是阅读字体 ----12px</p>
+
+                        <p class="text-success">我是强调得效果 #4cbd74</p>
+
+                        <p><a href="" class="text-link-orange">我是链接效果 #ff9800</a></p>
+
+                        <p><a href="" class="text-link-blue">我是链接效果 #0078ff</a></p>
+
+                        <p class="text-error">我是错误效果 #ff0000</p>
+
+                        <p class="text-read">我是阅读效果 #333333</p>
+
+                        <p class="text-read-weak">我是阅读效果 #666666</p>
+
+                        <p class="text-note">我一般用于注释 #999999</p>
+
+                        <p class="text-disabled">我一般用于不可点或暗注释 #cccccc</p>
+                    </div>
+
+                    <pre class="prettyprint">
+                        <code  class="lang-html">
+    &lt;h1&gt;&#25105;&#26159;h1&#30340;&#26174;&#31034;&#26679;&#24335; &#25105;&#26159;&#26631;&#39064;1 ----24px &lt;/h1&gt;
+    &lt;h2&gt;&#25105;&#26159;h2&#30340;&#26174;&#31034;&#26679;&#24335; &#25105;&#26159;&#26631;&#39064;2 ----18px&lt;/h2&gt;
+    &lt;h3&gt;&#25105;&#26159;h3&#30340;&#26174;&#31034;&#26679;&#24335; &#25105;&#26159;&#26631;&#39064;3 ----14px&lt;/h3&gt;
+    &lt;p&gt;&#25105;&#26159;&#27491;&#25991;&#26174;&#31034;&#30340;&#25928;&#26524; &#25105;&#26159;&#38405;&#35835;&#23383;&#20307; ----12px&lt;/p&gt;
+    &lt;p class=&quot;text-success&quot;&gt;&#25105;&#26159;&#24378;&#35843;&#24471;&#25928;&#26524; #4cbd74&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;&quot; class=&quot;text-link-orange&quot;&gt;&#25105;&#26159;&#38142;&#25509;&#25928;&#26524; #ff9800&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;&quot; class=&quot;text-link-blue&quot;&gt;&#25105;&#26159;&#38142;&#25509;&#25928;&#26524; #0078ff&lt;/a&gt;&lt;/p&gt;
+    &lt;p class=&quot;text-error&quot;&gt;&#25105;&#26159;&#38169;&#35823;&#25928;&#26524; #ff0000&lt;/p&gt;
+    &lt;p class=&quot;text-read&quot;&gt;&#25105;&#26159;&#38405;&#35835;&#25928;&#26524; #333333&lt;/p&gt;
+    &lt;p class=&quot;text-read-weak&quot;&gt;&#25105;&#26159;&#38405;&#35835;&#25928;&#26524; #666666&lt;/p&gt;
+    &lt;p class=&quot;text-note&quot;&gt;&#25105;&#19968;&#33324;&#29992;&#20110;&#27880;&#37322; #999999&lt;/p&gt;
+    &lt;p class=&quot;text-disabled&quot;&gt;&#25105;&#19968;&#33324;&#29992;&#20110;&#19981;&#21487;&#28857;&#25110;&#26263;&#27880;&#37322; #cccccc&lt;/p&gt;
+                        </code>
+                    </pre>
+                </div>
+                <p class="dividing-line">我是邪恶的分割线</p>
+                <div class="expand">
+                    <h2 class="h2" id="base_color">
+                        链接文字
+                    </h2>
+                    <div class="example">
+                        <table class="tab-color">
+                            <tr>
+                                <th>默认状态</th>
+                                <th>悬浮状态</th>
+                            </tr>
+                            <tr>
+                                <td><a href="">默认的链接效果#333333</a></td>
+                                <td><a href="" class="hover">hover #ff6f00</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="" class="link-orange">orange的链接效果#ff9800</a></td>
+                                <td><a href="" class="link-orange hover">hover #ff6f00</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="" class="link-blue">blur的链接效果#0078ff</a></td>
+                                <td><a href="" class="link-blue hover">hover #0078ff</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <pre class="prettyprint">
+    &lt;p&gt;&lt;a href=&quot;&quot;&gt;&#40664;&#35748;&#30340;&#38142;&#25509;&#25928;&#26524;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;&quot; class=&quot;link-orange&quot;&gt;orange&#30340;&#38142;&#25509;&#25928;&#26524;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;&quot; class=&quot;link-blue&quot;&gt;blur&#30340;&#38142;&#25509;&#25928;&#26524;&lt;/a&gt;&lt;/p&gt;
+                    </pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/animateScroll.js"></script>
+<script src="../js/radio-checkbox.js"></script>
+<script>
+    $(function(){
+        $(".aside li").click(function(){
+            $(this).siblings().removeClass("current");
+            $(this).addClass("current");
+            var indexH = $(this).index();
+            $('.content .expand').eq(indexH).find('h2').animatescroll({scrollSpeed:500,easing:'easeInOutSine',padding:80});
+        });
+    });
+</script>
+</body>
+</html>

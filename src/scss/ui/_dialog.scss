@@ -1,0 +1,147 @@
+.ui-dialog-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  filter:alpha(opacity=30);
+  opacity: 0.3;
+  z-index: 998;
+}
+
+.ui-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  z-index: 999;
+  border-radius: 2px;
+  box-shadow: 0 0 8px 2px rgba(65, 84, 71, 0.4);
+  transition: all .5s;
+  .ui-dialog-title {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    background: $green-color;
+    color: #fff;
+    padding-left: 16px;
+    font-size: 14px;
+    .ui-dialog-close, .ui-dialog-minuz {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      border-radius: 0 2px 0 0;
+      svg {
+        width: 10px;
+        height: 10px;
+        vertical-align: top;
+        margin: 15px 0 0 15px;
+        fill: #fff;
+      }
+    }
+    .minuz {
+      right: 40px;
+    }
+  }
+
+  .ui-dialog-buttons{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    height: 40px;
+    background: #fafafa;
+    border-radius: 0 0 2px 2px;
+
+    .ui-btn{
+      font-size: 12px;
+      width: 72px;
+      height: 24px;
+      margin: 8px 16px 0 0;
+    }
+  }
+}
+
+.ui-dialog.show {
+  -webkit-transform: scale(1);
+}
+
+/* alert */
+.ui-dialog-alert {
+  min-height: 128px;
+  padding: 40px 40px 16px 40px;
+  box-shadow: 0 5px 10px rgba(48, 70, 55, 0.2);
+  z-index: 10001;
+  > .close {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+  }
+  > i {
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    line-height: 24px;
+    margin: 16px 0 32px 0;
+    @include ellipsis()
+  }
+  p.no-button {
+    margin-bottom: 24px;
+  }
+  .fun {
+    width: 176px;
+    margin: 0 auto;
+    font-size: 0;
+    button {
+      width: 80px;
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+  > button {
+    display: block;
+    width: 96px;
+    margin: 0 auto;
+  }
+
+}
+
+
+
+.dialog400x192{
+  @include box-sizing;
+  width: 400px;
+  height: 192px;
+  margin-left: -200px;
+  margin-top: -81px;
+}
+
+.dialog480x392{
+  @include box-sizing;
+  width: 480px;
+  height: 392px;
+  margin-left: -240px;
+  margin-top: -196px;
+}
+
+.dialog552x464{
+  @include box-sizing;
+  width: 552px;
+  height: 464px;
+  margin-left: -276px;
+  margin-top: -232px;
+}

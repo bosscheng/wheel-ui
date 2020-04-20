@@ -1,0 +1,33 @@
+
+a {
+  color: $link-color-normal;
+  text-decoration: none;
+
+  &.hover,&:hover {
+    color: $link-color-hover-normal;
+    text-decoration: underline;
+  }
+}
+
+a.link-blue {
+  color: $link-color-blue;
+}
+
+a.link-orange {
+  color: $link-color-orange;
+
+  &.hover,&:hover {
+    color: $link-color-hover-orange;
+  }
+}
+
+a.link-none{
+
+  color: #000;
+  text-decoration: none;
+
+  &.hover,&:hover {
+    color: #000;
+    text-decoration: none;
+  }
+}

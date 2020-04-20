@@ -1,0 +1,137 @@
+
+.form-wrap {
+  margin-top: 16px;
+
+  h2 {
+    font-size: $font-special-size;
+    line-height: 24px;
+    color: #999;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  > .form-group {
+    padding-bottom: $form-group-bottom-length; /*  */
+    line-height: 40px;
+    position: relative;
+    @include clearfix;
+
+    > label,> label.label24 {
+      float: left;
+      width: $form-group-level-length;
+      height: 32px;
+      line-height: 32px;
+      margin-left: 16px;
+      margin-top: 4px;
+      padding-left: 16px;
+      text-align: left;
+      color: #666;
+      position: relative;
+      // error tips
+      > i {
+        font-style: normal;
+        color: #fc0d1b;
+        margin-right: 8px;
+        margin-left: -13px;
+      }
+    }
+    > label.label24{
+      height: 24px;
+      line-height: 24px;
+    }
+
+    > .form-item {
+      float: left;
+      width: $form-item-length;
+      >span,>span.span24{
+        display: block;
+        @include box-sizing;
+        width: 100%;
+        padding:8px 10px 8px 0;
+        margin:4px 0;
+        line-height: 16px;
+        color: #333;
+      }
+      >span.span24{
+        padding:4px 10px 4px 0;
+      }
+    }
+
+    // error tip
+    .error-tip {
+      float: left;
+      padding: 0 8px;
+      margin-top: 10px;
+      margin-bottom: -8px;
+      line-height: 30px;
+      border: 1px solid $form-error-tip-border-color;
+      background-color: $form-error-tip-bg-color;
+      border-radius: $text-border-radius;
+      color: $red-color;
+      position: relative;
+
+//      &:before, &:after {
+//        position: absolute;
+//        content: "";
+//        top: -9px;
+//        left: 8px;
+//        width: 0;
+//        height: 0;
+//        border-width: 4px;
+//        border-style: solid;
+//        border-color: transparent transparent $form-error-tip-border-color transparent ;
+//      }
+//
+//      &:after {
+//        border-color: transparent transparent $form-error-tip-bg-color transparent;
+//        top: -8px;
+//      }
+    }
+  }
+}
+
+/* narrow form*/
+.form-wrap-narrow,.form-wrap-narrow-24 {
+
+  > .form-group {
+
+    > label,> label.label24 {
+      text-align: right;
+      padding-left: 0;
+      margin-right: 16px;
+      margin-left: 0;
+      width: $form-group-narrow-level-length;
+
+      > i {
+        margin-right: 8px;
+        margin-left: 0;
+      }
+    }
+
+    > .form-item {
+      width: $form-item-narrow-length;
+    }
+
+    .error-tip-narrow {
+      @include tip($red-color,$form-error-tip-bg-color,$form-error-tip-border-color);
+    }
+
+
+
+    .tip-narrow{
+      @include tip($green-color,$form-tip-bg-color,$form-tip-border-color);
+    }
+  }
+}
+
+.form-wrap-narrow-24{
+  > .form-group {
+    .error-tip-narrow {
+      padding: 3px 8px;
+    }
+
+    .tip-narrow {
+      padding: 3px 8px;
+    }
+  }
+}

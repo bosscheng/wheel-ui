@@ -1,0 +1,78 @@
+// 工具类
+
+// 清除浮动
+.clearfix {
+  @include clearfix();
+}
+
+.floatL {
+  float: left;
+}
+
+.floatR {
+  float: right;
+}
+
+.text-success {
+  color: $color-success;
+}
+
+.text-note {
+  color: $color-note;
+}
+
+.text-disabled {
+  color: $color-disabled;
+}
+
+.text-link-blue {
+  color: $color-link-blue;
+}
+
+.text-link-orange {
+  color: $color-link-orange;
+}
+
+.text-read {
+  color: $color-read;
+}
+
+.text-read-weak {
+  color: $color-read-weak;
+}
+
+.text-error {
+  color: $color-error;
+}
+
+.green-color {
+  color: $green-color;
+}
+
+.wh254 {
+  width: 254px !important;
+}
+
+.hh254 {
+  height: 254px !important;
+}
+
+.wh112 {
+  width: 112px !important;
+}
+
+.wh24 {
+  width: 24px !important;
+}
+
+// 盒子
+// 主要是用于 局部区域的外层的显示效果的
+.box {
+  @include box();
+}
+
+// 箭头
+.arrow {
+
+}
+

@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/prettify.css"/>
+    <link rel="stylesheet" href="../../scss/focusteach.css"/>
+    <script src="../js/run_prettify.js"></script>
+    <title>Ui</title>
+</head>
+<body onload="prettyPrint();">
+<div id="header">
+    <div class="grid">
+        <h1 class="logo"><a href="/index">焦點智慧教室</a></h1>
+        <ul>
+            <li><a href="../index.html">基础</a></li>
+            <li><a href="./ui.html">组件</a></li>
+            <li><a href="./component.html">插件</a></li>
+            <li><a href="">sass功能</a></li>
+            <li><a href="">动画</a></li>
+        </ul>
+    </div>
+</div>
+<div class="main" id="main">
+    <div class="home home grid">
+        <div class="aside">
+            <div class="menu box">
+                <ul class="menu-lst">
+                    <li class="current"><a href="#ui_button">按钮(Button)</a>
+                    <li><a href="#ui_pager">分页(Pager)</a></li>
+                    <li><a href="#ui_form">表单(Form)</a></li>
+                    <li><a href="#ui_table">表格(Table)</a></li>
+                    <li><a href="#ui_crumb">面包屑(crumb)</a></li>
+                    <li><a href="#ui_dialog">弹出层(dialog)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box list-wrap">
+                <div class="expand">
+                    <h2 class="h2" id="ui_button">
+                        Button
+                    </h2>
+                    <div class="example">
+                        <table class="tab-color" style="width:100%;">
+                            <tr>
+                                <th>类别</th>
+                                <th>normal</th>
+                                <th>hover</th>
+                                <th>press</th>
+                                <th>disabled</th>
+                            </tr>
+                            <tr>
+                                <td>主要操作</td>
+                                <td><button class="ui-btn">我是按钮</button></td>
+                                <td><button class="ui-btn hover">我是按钮</button></td>
+                                <td><button class="ui-btn active">我是按钮</button></td>
+                                <td><button class="ui-btn" disabled>我是按钮</button></td>
+                            </tr>
+                            <tr>
+                                <td>字体颜色</td>
+                                <td>#ffffff</td>
+                                <td>#ffffff</td>
+                                <td>#ffffff</td>
+                                <td>#ffffff</td>
+                            </tr>
+                            <tr>
+                                <td>按钮颜色</td>
+                                <td style="color:#ff9800">#ff9800</td>
+                                <td style="color:#ff6f00">#ff6f00</td>
+                                <td style="color:#e68a00">#e68a00</td>
+                                <td style="color:#cccccc">#cccccc</td>
+                            </tr>
+                            <tr>
+                                <td>按钮圆角</td>
+                                <td>4px</td>
+                                <td>4px</td>
+                                <td>4px</td>
+                                <td>4px</td>
+                            </tr>
+                            <tr>
+                                <td>按钮阴影</td>
+                                <td>无</td>
+                                <td>R:0 G:51 B:0 <br/>透明度20% <br/>距离2px 大小4px</td>
+                                <td>无</td>
+                                <td>无</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #cccccc"> <td colspan="5"></td></tr>
+                            <tr>
+                                <td>次要操作</td>
+                                <td><button class="ui-btn ui-btn-special">我是按钮</button></td>
+                                <td><button class="ui-btn ui-btn-special hover">我是按钮</button></td>
+                                <td><button class="ui-btn ui-btn-special active">我是按钮</button></td>
+                                <td><button class="ui-btn ui-btn-special" disabled>我是按钮</button></td>
+                            </tr>
+                            <tr>
+                                <td>字体颜色</td>
+                                <td>#333333</td>
+                                <td>#333333</td>
+                                <td>#333333</td>
+                                <td>#333333</td>
+                            </tr>
+                            <tr>
+                                <td>按钮颜色</td>
+                                <td style="color:#ffffff;background-color:#000000 ">#ffffff</td>
+                                <td style="color:#ffffff;background-color:#000000 ">#ffffff</td>
+                                <td style="color:#eeeeee;background-color:#000000 ">#eeeeee</td>
+                                <td style="color:#cccccc;background-color:#000000 ">#cccccc</td>
+                            </tr>
+                            <tr>
+                                <td>按钮描边</td>
+                                <td>1px #cccccc</td>
+                                <td>1px #cccccc</td>
+                                <td>1px #cccccc</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>按钮圆角</td>
+                                <td>4px</td>
+                                <td>4px</td>
+                                <td>4px</td>
+                                <td>4px</td>
+                            </tr>
+                            <tr>
+                                <td>按钮阴影</td>
+                                <td>无</td>
+                                <td>R:0 G:51 B:0 <br/>透明度20% <br/>距离2px 大小4px</td>
+                                <td>无</td>
+                                <td>无</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #cccccc"><td colspan="5"></td></tr>
+                            <tr>
+                                <td>按钮大小</td>
+                                <td><button class="ui-btn ui-btn-lg">我是按钮ui-btn-lg</button></td>
+                                <td><button class="ui-btn">我是按钮</button></td>
+                                <td><button class="ui-btn ui-btn-sm">我是按钮ui-btn-sm</button></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>字体大小</td>
+                                <td>14px</td>
+                                <td>14px</td>
+                                <td>12px</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>按钮高度</td>
+                                <td>40px</td>
+                                <td>32px</td>
+                                <td>24px</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <pre class="prettyprint">
+    &lt;button class=&quot;ui-btn&quot;&gt;&#20027;&#35201;&#25805;&#20316;&lt;/button&gt;
+    &lt;button class=&quot;ui-btn ui-btn-special&quot;&gt;&#27425;&#35201;&#25805;&#20316;&lt;/button&gt;
+    &lt;button class=&quot;ui-btn ui-btn-lg&quot;&gt;&#25105;&#26159;&#25353;&#38062;ui-btn-lg&lt;/button&gt;
+    &lt;button class=&quot;ui-btn ui-btn-sm&quot;&gt;&#25105;&#26159;&#25353;&#38062;ui-btn-sm&lt;/button&gt;
+                    </pre>
+                </div>
+                <p class="dividing-line">我是邪恶的分割线</p>
+                <div class="expand">
+                    <h2 class="h2" id="ui_pager">
+                        Pager
+                    </h2>
+                    <div class="example">
+                        <div class="pager">
+                            <a href="" class="greypage">&lt;上一页</a>
+                            <a href="" class="page-now">1</a>
+                            <a href="" >2</a>
+                            <a href="" >3</a>
+                            <span>...</span>
+                            <a href="" >39</a>
+                            <a href="">下一页&gt;</a>
+                            <span class="page-box" data-total="39">共39页，到第<input type='text' name="pager-input" value="1">页</span>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+    &lt;div class=&quot;pager&quot;&gt;
+        &lt;a href=&quot;&quot; class=&quot;greypage&quot;&gt;&amp;lt;&#19978;&#19968;&#39029;&lt;/a&gt;
+        &lt;a href=&quot;&quot; class=&quot;page-now&quot;&gt;1&lt;/a&gt;
+        &lt;a href=&quot;&quot; &gt;2&lt;/a&gt;
+        &lt;a href=&quot;&quot; &gt;3&lt;/a&gt;
+        &lt;span&gt;...&lt;/span&gt;
+        &lt;a href=&quot;&quot; &gt;39&lt;/a&gt;
+        &lt;a href=&quot;&quot;&gt;&#19979;&#19968;&#39029;&amp;gt;&lt;/a&gt;
+        &lt;span class=&quot;page-box&quot; data-total=&quot;39&quot;&gt;&#20849;39&#39029;&#65292;&#21040;&#31532;&lt;input type='text' name=&quot;pager-input&quot; value=&quot;1&quot;&gt;&#39029;&lt;/span&gt;
+    &lt;/div&gt;
+                    </pre>
+                    <div class="example">
+                        <div class="newPager">
+                            <ul class="items">
+                                <li class="item"><a href="" class="num">&lt;</a></li>
+                                <li class="item active"><span class="num">1</span></li>
+                                <li class="item dot">...</li>
+                                <li class="item"><a href="" class="num">4</a></li>
+                                <li class="item"><a href="" class="num">5</a></li>
+                                <li class="item"><a href="" class="num">6</a></li>
+                                <li class="item dot">...</li>
+                                <li class="item"><a href="" class="num">10</a></li>
+                                <li class="item"><a href="" class="num">&gt;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+    &lt;div class=&quot;newPager&quot;&gt;
+        &lt;ul class=&quot;items&quot;&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;&quot; class=&quot;num&quot;&gt;&amp;lt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;item active&quot;&gt;&lt;span class=&quot;num&quot;&gt;1&lt;/span&gt;&lt;/li&gt;
+            &lt;li class=&quot;item dot&quot;&gt;...&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;&quot; class=&quot;num&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;&quot; class=&quot;num&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;&quot; class=&quot;num&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;item dot&quot;&gt;...&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;&quot; class=&quot;num&quot;&gt;10&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;&quot; class=&quot;num&quot;&gt;&amp;gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+                    </pre>
+                </div>
+                <p class="dividing-line">我是邪恶的分割线</p>
+                <div class="expand">
+                    <h2 class="h2" id="ui_form">
+                        Form
+                    </h2>
+                    <div class="example">
+                        <div class="form-wrap form-wrap-narrow">
+                            <div class="form-group">
+                                <label for="">学年</label>
+
+                                <div class="form-item">
+                                    <span class="wh254">2015-2016</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><i>*</i>我是下拉表单</label>
+
+                                <div class="form-item">
+                                    <select name="" class="ui-select wh254">
+                                        <option value="1" selected>一年级</option>
+                                        <option value="2">二年级</option>
+                                        <option value="3">三年级</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><i>*</i>我是联动表单</label>
+
+                                <div class="form-item">
+                                    <label class="ui-radio">
+                                        <i class="icon-radio-unselected"></i>
+                                        <input type="radio" name="baby"/>
+                                        选择班级名称
+                                    </label>
+
+                                    <label class="ui-radio">
+                                        <i class="icon-radio-selected"></i>
+                                        <input type="radio" name="baby" checked/>
+                                        自定义班级名称
+                                    </label><br/>
+                                    <input type="text" class="ui-input wh254" placeholder="我是暗注释"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><i>*</i>手机验证码</label>
+
+                                <div class="form-item">
+                                    <div class="ui-input-mobile-verif-code">
+                                        <input type="text" class="ui-input wh254"/>
+                                        <input type="button" class="ui-btn ui-btn-sm" value="发送验证码"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for=""><i>*</i>手机验证码</label>
+
+                                <div class="form-item">
+                                    <div class="ui-input-mobile-verif-code">
+                                        <input type="text" class="ui-input wh254"/>
+                                        <input type="button" class="ui-btn ui-btn-sm disabled" value="发送验证码"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for=""><i>*</i>手机验证码</label>
+
+                                <div class="form-item">
+                                    <div class="ui-input-mobile-verif-code">
+                                        <input type="text" class="ui-input wh254" disabled/>
+                                        <input type="button" class="ui-btn ui-btn-sm disabled" value="发送验证码"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for=""><i>*</i>不可点</label>
+
+                                <div class="form-item">
+                                    <input type="text" class="ui-input wh254" disabled/>
+                                    <label class="tip-narrow">只有一行的时候</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">验证码</label>
+
+                                <div class="form-item">
+                                    <div class="ui-input-verif-code">
+                                        <input type="text" class="ui-input wh112"/>
+
+                                        <div class="verif-code" style="background-color: turquoise">
+
+                                        </div>
+                                        <a class="link-blue" href="">换一张</a>
+                                    </div>
+                                    <label class="error-tip-narrow">当提示文字较长，需要换行时建议出现5s提示消失当提示文字较长，需要换行时建议出现5s提示消失当提示文字较长，需要换行时建议出现5s提示消失当提示文字较长，需要换行时建议出现5s提示消失</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><i>*</i>单选不可点</label>
+                                <div class="form-item">
+                                    <label class="ui-radio disabled">
+                                        <i class="icon-radio-unselected" ></i>
+                                        <input type="radio" name="baby"/>
+                                        未选不可选
+                                    </label>
+
+                                    <label class="ui-radio disabled">
+                                        <i class="icon-radio-selected"></i>
+                                        <input type="radio" name="baby" checked/>
+                                        已选不可选
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for=""><i>*</i>多选</label>
+                                <div class="form-item">
+                                    <label class="ui-checkbox">
+                                        <i class="icon-checkbox-unselected"></i>
+                                        <input type="checkbox"/>
+                                        未选
+                                    </label>
+
+                                    <label class="ui-checkbox">
+                                        <i class="icon-checkbox-selected"></i>
+                                        <input type="checkbox" checked/>
+                                        已选
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for=""><i>*</i>多选不可点</label>
+                                <div class="form-item">
+                                    <label class="ui-checkbox disabled">
+                                        <i class="icon-checkbox-unselected disabled"></i>
+                                        <input type="checkbox"/>
+                                        未选不可点
+                                    </label>
+
+                                    <label class="ui-checkbox disabled">
+                                        <i class="icon-checkbox-selected"></i>
+                                        <input type="checkbox" checked/>
+                                        已选不可点
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+    &lt;div class=&quot;form-wrap form-wrap-narrow&quot;&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&#23398;&#24180;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;span class=&quot;wh254&quot;&gt;2015-2016&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#25105;&#26159;&#19979;&#25289;&#34920;&#21333;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;select name=&quot;&quot; class=&quot;ui-select wh254&quot;&gt;
+                    &lt;option value=&quot;1&quot; selected&gt;&#19968;&#24180;&#32423;&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;&#20108;&#24180;&#32423;&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;&#19977;&#24180;&#32423;&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#25105;&#26159;&#32852;&#21160;&#34920;&#21333;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;label class=&quot;ui-radio&quot;&gt;
+                    &lt;i class=&quot;icon-radio-unselected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;baby&quot;/&gt;
+                    &#36873;&#25321;&#29677;&#32423;&#21517;&#31216;
+                &lt;/label&gt;
+
+                &lt;label class=&quot;ui-radio&quot;&gt;
+                    &lt;i class=&quot;icon-radio-selected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;baby&quot; checked/&gt;
+                    &#33258;&#23450;&#20041;&#29677;&#32423;&#21517;&#31216;
+                &lt;/label&gt;&lt;br/&gt;
+                &lt;input type=&quot;text&quot; class=&quot;ui-input wh254&quot; placeholder=&quot;&#25105;&#26159;&#26263;&#27880;&#37322;&quot;/&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#25163;&#26426;&#39564;&#35777;&#30721;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;div class=&quot;ui-input-mobile-verif-code&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;ui-input wh254&quot;/&gt;
+                    &lt;input type=&quot;button&quot; class=&quot;ui-btn ui-btn-sm&quot; value=&quot;&#21457;&#36865;&#39564;&#35777;&#30721;&quot;/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#25163;&#26426;&#39564;&#35777;&#30721;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;div class=&quot;ui-input-mobile-verif-code&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;ui-input wh254&quot;/&gt;
+                    &lt;input type=&quot;button&quot; class=&quot;ui-btn ui-btn-sm disabled&quot; value=&quot;&#21457;&#36865;&#39564;&#35777;&#30721;&quot;/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#25163;&#26426;&#39564;&#35777;&#30721;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;div class=&quot;ui-input-mobile-verif-code&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;ui-input wh254&quot; disabled/&gt;
+                    &lt;input type=&quot;button&quot; class=&quot;ui-btn ui-btn-sm disabled&quot; value=&quot;&#21457;&#36865;&#39564;&#35777;&#30721;&quot;/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#19981;&#21487;&#28857;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;ui-input wh254&quot; disabled/&gt;
+                &lt;label class=&quot;tip-narrow&quot;&gt;&#21482;&#26377;&#19968;&#34892;&#30340;&#26102;&#20505;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&#39564;&#35777;&#30721;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;div class=&quot;ui-input-verif-code&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;ui-input wh112&quot;/&gt;
+
+                    &lt;div class=&quot;verif-code&quot; style=&quot;background-color: turquoise&quot;&gt;
+
+                    &lt;/div&gt;
+                    &lt;a class=&quot;link-blue&quot; href=&quot;&quot;&gt;&#25442;&#19968;&#24352;&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;label class=&quot;error-tip-narrow&quot;&gt;&#24403;&#25552;&#31034;&#25991;&#23383;&#36739;&#38271;&#65292;&#38656;&#35201;&#25442;&#34892;&#26102;&#24314;&#35758;&#20986;&#29616;5s&#25552;&#31034;&#28040;&#22833;&#24403;&#25552;&#31034;&#25991;&#23383;&#36739;&#38271;&#65292;&#38656;&#35201;&#25442;&#34892;&#26102;&#24314;&#35758;&#20986;&#29616;5s&#25552;&#31034;&#28040;&#22833;&#24403;&#25552;&#31034;&#25991;&#23383;&#36739;&#38271;&#65292;&#38656;&#35201;&#25442;&#34892;&#26102;&#24314;&#35758;&#20986;&#29616;5s&#25552;&#31034;&#28040;&#22833;&#24403;&#25552;&#31034;&#25991;&#23383;&#36739;&#38271;&#65292;&#38656;&#35201;&#25442;&#34892;&#26102;&#24314;&#35758;&#20986;&#29616;5s&#25552;&#31034;&#28040;&#22833;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#21333;&#36873;&#19981;&#21487;&#28857;&lt;/label&gt;
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;label class=&quot;ui-radio disabled&quot;&gt;
+                    &lt;i class=&quot;icon-radio-unselected&quot; &gt;&lt;/i&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;baby&quot;/&gt;
+                    &#26410;&#36873;&#19981;&#21487;&#36873;
+                &lt;/label&gt;
+
+                &lt;label class=&quot;ui-radio disabled&quot;&gt;
+                    &lt;i class=&quot;icon-radio-selected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;baby&quot; checked/&gt;
+                    &#24050;&#36873;&#19981;&#21487;&#36873;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#22810;&#36873;&lt;/label&gt;
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;label class=&quot;ui-checkbox&quot;&gt;
+                    &lt;i class=&quot;icon-checkbox-unselected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;checkbox&quot;/&gt;
+                    &#26410;&#36873;
+                &lt;/label&gt;
+
+                &lt;label class=&quot;ui-checkbox&quot;&gt;
+                    &lt;i class=&quot;icon-checkbox-selected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;checkbox&quot; checked/&gt;
+                    &#24050;&#36873;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#22810;&#36873;&#19981;&#21487;&#28857;&lt;/label&gt;
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;label class=&quot;ui-checkbox disabled&quot;&gt;
+                    &lt;i class=&quot;icon-checkbox-unselected disabled&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;checkbox&quot;/&gt;
+                    &#26410;&#36873;&#19981;&#21487;&#28857;
+                &lt;/label&gt;
+
+                &lt;label class=&quot;ui-checkbox disabled&quot;&gt;
+                    &lt;i class=&quot;icon-checkbox-selected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;checkbox&quot; checked/&gt;
+                    &#24050;&#36873;&#19981;&#21487;&#28857;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+                    </pre>
+
+                    <div class="example">
+                        <div class="form-wrap form-wrap-narrow-24">
+                            <div class="form-group">
+                                <label  class="label24" for="">学年</label>
+
+                                <div class="form-item">
+                                    <span class="span24 wh254">2015-2016</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="label24" for=""><i>*</i>我是下拉表单</label>
+
+                                <div class="form-item">
+                                    <select name="" class="ui-select-24 wh254">
+                                        <option value="1" selected>一年级</option>
+                                        <option value="2">二年级</option>
+                                        <option value="3">三年级</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="label24" for=""><i>*</i>我是联动表单</label>
+
+                                <div class="form-item">
+                                    <label class="ui-radio-24">
+                                        <i class="icon-radio-unselected"></i>
+                                        <input type="radio" name="baby"/>
+                                        选择班级名称
+                                    </label>
+
+                                    <label class="ui-radio-24">
+                                        <i class="icon-radio-selected"></i>
+                                        <input type="radio" name="baby" checked/>
+                                        自定义班级名称
+                                    </label><br/>
+                                    <input type="text" class="ui-input-24 wh254" placeholder="我是暗注释"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="label24" for=""><i>*</i>手机验证码</label>
+
+                                <div class="form-item">
+                                    <div class="ui-input-mobile-verif-code">
+                                        <input type="text" class="ui-input-24 wh254"/>
+                                        <input type="button" class="ui-btn ui-btn-sm" value="发送验证码"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="label24" for=""><i>*</i>手机验证码</label>
+
+                                <div class="form-item">
+                                    <div class="ui-input-mobile-verif-code">
+                                        <input type="text" class="ui-input-24 wh254"/>
+                                        <input type="button" class="ui-btn ui-btn-sm disabled" value="发送验证码"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="label24" for=""><i>*</i>手机验证码</label>
+
+                                <div class="form-item">
+                                    <div class="ui-input-mobile-verif-code">
+                                        <input type="text" class="ui-input-24 wh254" disabled/>
+                                        <input type="button" class="ui-btn ui-btn-sm disabled" value="发送验证码"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="label24" for=""><i>*</i>不可点</label>
+
+                                <div class="form-item">
+                                    <input type="text" class="ui-input-24 wh254" disabled/>
+                                    <label class="tip-narrow">只有一行的时候</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="label24" for="">验证码</label>
+
+                                <div class="form-item">
+                                    <div class="ui-input-verif-code">
+                                        <input type="text" class="ui-input-24 wh112"/>
+
+                                        <div class="verif-code-24" style="background-color: turquoise">
+
+                                        </div>
+                                        <a class="a24 link-blue" href="">换一张</a>
+                                    </div>
+                                    <label class="error-tip-narrow">当提示文字较长，需要换行时建议出现5s提示消失当提示文字较长，需要换行时建议出现5s提示消失当提示文字较长，需要换行时建议出现5s提示消失当提示文字较长，需要换行时建议出现5s提示消失</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="label24" for=""><i>*</i>单选不可点</label>
+                                <div class="form-item">
+                                    <label class="ui-radio-24 disabled">
+                                        <i class="icon-radio-unselected" ></i>
+                                        <input type="radio" name="baby"/>
+                                        未选不可选
+                                    </label>
+
+                                    <label class="ui-radio-24 disabled">
+                                        <i class="icon-radio-selected"></i>
+                                        <input type="radio" name="baby" checked/>
+                                        已选不可选
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="label24" for=""><i>*</i>多选</label>
+                                <div class="form-item">
+                                    <label class="ui-checkbox-24">
+                                        <i class="icon-checkbox-unselected"></i>
+                                        <input type="checkbox"/>
+                                        未选
+                                    </label>
+
+                                    <label class="ui-checkbox-24">
+                                        <i class="icon-checkbox-selected"></i>
+                                        <input type="checkbox" checked/>
+                                        已选
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="label24" for=""><i>*</i>多选不可点</label>
+                                <div class="form-item">
+                                    <label class="ui-checkbox-24 disabled">
+                                        <i class="icon-checkbox-unselected disabled"></i>
+                                        <input type="checkbox"/>
+                                        未选不可点
+                                    </label>
+
+                                    <label class="ui-checkbox-24 disabled">
+                                        <i class="icon-checkbox-selected"></i>
+                                        <input type="checkbox" checked/>
+                                        已选不可点
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+    &lt;div class=&quot;form-wrap form-wrap-narrow-24&quot;&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label  class=&quot;label24&quot; for=&quot;&quot;&gt;&#23398;&#24180;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;span class=&quot;span24 wh254&quot;&gt;2015-2016&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;label24&quot; for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#25105;&#26159;&#19979;&#25289;&#34920;&#21333;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;select name=&quot;&quot; class=&quot;ui-select-24 wh254&quot;&gt;
+                    &lt;option value=&quot;1&quot; selected&gt;&#19968;&#24180;&#32423;&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;&#20108;&#24180;&#32423;&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;&#19977;&#24180;&#32423;&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;label24&quot; for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#25105;&#26159;&#32852;&#21160;&#34920;&#21333;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;label class=&quot;ui-radio-24&quot;&gt;
+                    &lt;i class=&quot;icon-radio-unselected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;baby&quot;/&gt;
+                    &#36873;&#25321;&#29677;&#32423;&#21517;&#31216;
+                &lt;/label&gt;
+
+                &lt;label class=&quot;ui-radio-24&quot;&gt;
+                    &lt;i class=&quot;icon-radio-selected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;baby&quot; checked/&gt;
+                    &#33258;&#23450;&#20041;&#29677;&#32423;&#21517;&#31216;
+                &lt;/label&gt;&lt;br/&gt;
+                &lt;input type=&quot;text&quot; class=&quot;ui-input-24 wh254&quot; placeholder=&quot;&#25105;&#26159;&#26263;&#27880;&#37322;&quot;/&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;label24&quot; for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#25163;&#26426;&#39564;&#35777;&#30721;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;div class=&quot;ui-input-mobile-verif-code&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;ui-input-24 wh254&quot;/&gt;
+                    &lt;input type=&quot;button&quot; class=&quot;ui-btn ui-btn-sm&quot; value=&quot;&#21457;&#36865;&#39564;&#35777;&#30721;&quot;/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;label24&quot; for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#25163;&#26426;&#39564;&#35777;&#30721;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;div class=&quot;ui-input-mobile-verif-code&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;ui-input-24 wh254&quot;/&gt;
+                    &lt;input type=&quot;button&quot; class=&quot;ui-btn ui-btn-sm disabled&quot; value=&quot;&#21457;&#36865;&#39564;&#35777;&#30721;&quot;/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;label24&quot; for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#25163;&#26426;&#39564;&#35777;&#30721;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;div class=&quot;ui-input-mobile-verif-code&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;ui-input-24 wh254&quot; disabled/&gt;
+                    &lt;input type=&quot;button&quot; class=&quot;ui-btn ui-btn-sm disabled&quot; value=&quot;&#21457;&#36865;&#39564;&#35777;&#30721;&quot;/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;label24&quot; for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#19981;&#21487;&#28857;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;ui-input-24 wh254&quot; disabled/&gt;
+                &lt;label class=&quot;tip-narrow&quot;&gt;&#21482;&#26377;&#19968;&#34892;&#30340;&#26102;&#20505;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;label24&quot; for=&quot;&quot;&gt;&#39564;&#35777;&#30721;&lt;/label&gt;
+
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;div class=&quot;ui-input-verif-code&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;ui-input-24 wh112&quot;/&gt;
+
+                    &lt;div class=&quot;verif-code-24&quot; style=&quot;background-color: turquoise&quot;&gt;
+
+                    &lt;/div&gt;
+                    &lt;a class=&quot;a24 link-blue&quot; href=&quot;&quot;&gt;&#25442;&#19968;&#24352;&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;label class=&quot;error-tip-narrow&quot;&gt;&#24403;&#25552;&#31034;&#25991;&#23383;&#36739;&#38271;&#65292;&#38656;&#35201;&#25442;&#34892;&#26102;&#24314;&#35758;&#20986;&#29616;5s&#25552;&#31034;&#28040;&#22833;&#24403;&#25552;&#31034;&#25991;&#23383;&#36739;&#38271;&#65292;&#38656;&#35201;&#25442;&#34892;&#26102;&#24314;&#35758;&#20986;&#29616;5s&#25552;&#31034;&#28040;&#22833;&#24403;&#25552;&#31034;&#25991;&#23383;&#36739;&#38271;&#65292;&#38656;&#35201;&#25442;&#34892;&#26102;&#24314;&#35758;&#20986;&#29616;5s&#25552;&#31034;&#28040;&#22833;&#24403;&#25552;&#31034;&#25991;&#23383;&#36739;&#38271;&#65292;&#38656;&#35201;&#25442;&#34892;&#26102;&#24314;&#35758;&#20986;&#29616;5s&#25552;&#31034;&#28040;&#22833;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;label24&quot; for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#21333;&#36873;&#19981;&#21487;&#28857;&lt;/label&gt;
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;label class=&quot;ui-radio-24 disabled&quot;&gt;
+                    &lt;i class=&quot;icon-radio-unselected&quot; &gt;&lt;/i&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;baby&quot;/&gt;
+                    &#26410;&#36873;&#19981;&#21487;&#36873;
+                &lt;/label&gt;
+
+                &lt;label class=&quot;ui-radio-24 disabled&quot;&gt;
+                    &lt;i class=&quot;icon-radio-selected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;baby&quot; checked/&gt;
+                    &#24050;&#36873;&#19981;&#21487;&#36873;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;label24&quot; for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#22810;&#36873;&lt;/label&gt;
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;label class=&quot;ui-checkbox-24&quot;&gt;
+                    &lt;i class=&quot;icon-checkbox-unselected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;checkbox&quot;/&gt;
+                    &#26410;&#36873;
+                &lt;/label&gt;
+
+                &lt;label class=&quot;ui-checkbox-24&quot;&gt;
+                    &lt;i class=&quot;icon-checkbox-selected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;checkbox&quot; checked/&gt;
+                    &#24050;&#36873;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;label24&quot; for=&quot;&quot;&gt;&lt;i&gt;*&lt;/i&gt;&#22810;&#36873;&#19981;&#21487;&#28857;&lt;/label&gt;
+            &lt;div class=&quot;form-item&quot;&gt;
+                &lt;label class=&quot;ui-checkbox-24 disabled&quot;&gt;
+                    &lt;i class=&quot;icon-checkbox-unselected disabled&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;checkbox&quot;/&gt;
+                    &#26410;&#36873;&#19981;&#21487;&#28857;
+                &lt;/label&gt;
+
+                &lt;label class=&quot;ui-checkbox-24 disabled&quot;&gt;
+                    &lt;i class=&quot;icon-checkbox-selected&quot;&gt;&lt;/i&gt;
+                    &lt;input type=&quot;checkbox&quot; checked/&gt;
+                    &#24050;&#36873;&#19981;&#21487;&#28857;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+                </div>
+
+                <p class="dividing-line">我是邪恶的分割线</p>
+                <div class="expand">
+                    <h2 class="h2" id="ui_table">
+                        Table
+                    </h2>
+                    <div class="example" style="background-color: #ccc">
+                        <div class="box">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table">
+                                <tbody>
+                                    <tr class="l">
+                                        <th>序号</th>
+                                        <th>姓名</th>
+                                        <th>手机</th>
+                                        <th>注册状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr class="l">
+                                        <td>1</td>
+                                        <td>刘洋</td>
+                                        <td>15851810833</td>
+                                        <td>未注册</td>
+                                        <td><a href="">删除</a></td>
+                                    </tr>
+                                    <tr class="l">
+                                        <td>2</td>
+                                        <td>买买提</td>
+                                        <td>15851810833</td>
+                                        <td class="green-color">已注册</td>
+                                        <td><a href="">删除</a></td>
+                                    </tr>
+                                    <tr class="l">
+                                        <td>3</td>
+                                        <td>亚历山大 · 红</td>
+                                        <td>15851810833</td>
+                                        <td>未注册</td>
+                                        <td><a href="">删除</a></td>
+                                    </tr>
+                                    <tr class="l">
+                                        <td>4</td>
+                                        <td>刘晓艺</td>
+                                        <td>15851810833</td>
+                                        <td>未注册</td>
+                                        <td><a href="">删除</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+    &lt;div class=&quot;box&quot;&gt;
+        &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; class=&quot;table&quot;&gt;
+            &lt;tbody&gt;
+                &lt;tr class=&quot;l&quot;&gt;
+                    &lt;th&gt;&#24207;&#21495;&lt;/th&gt;
+                    &lt;th&gt;&#22995;&#21517;&lt;/th&gt;
+                    &lt;th&gt;&#25163;&#26426;&lt;/th&gt;
+                    &lt;th&gt;&#27880;&#20876;&#29366;&#24577;&lt;/th&gt;
+                    &lt;th&gt;&#25805;&#20316;&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;l&quot;&gt;
+                    &lt;td&gt;1&lt;/td&gt;
+                    &lt;td&gt;&#21016;&#27915;&lt;/td&gt;
+                    &lt;td&gt;15851810833&lt;/td&gt;
+                    &lt;td&gt;&#26410;&#27880;&#20876;&lt;/td&gt;
+                    &lt;td&gt;&lt;a href=&quot;&quot;&gt;&#21024;&#38500;&lt;/a&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;l&quot;&gt;
+                    &lt;td&gt;2&lt;/td&gt;
+                    &lt;td&gt;&#20080;&#20080;&#25552;&lt;/td&gt;
+                    &lt;td&gt;15851810833&lt;/td&gt;
+                    &lt;td class=&quot;green-color&quot;&gt;&#24050;&#27880;&#20876;&lt;/td&gt;
+                    &lt;td&gt;&lt;a href=&quot;&quot;&gt;&#21024;&#38500;&lt;/a&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;l&quot;&gt;
+                    &lt;td&gt;3&lt;/td&gt;
+                    &lt;td&gt;&#20122;&#21382;&#23665;&#22823; &middot; &#32418;&lt;/td&gt;
+                    &lt;td&gt;15851810833&lt;/td&gt;
+                    &lt;td&gt;&#26410;&#27880;&#20876;&lt;/td&gt;
+                    &lt;td&gt;&lt;a href=&quot;&quot;&gt;&#21024;&#38500;&lt;/a&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;l&quot;&gt;
+                    &lt;td&gt;4&lt;/td&gt;
+                    &lt;td&gt;&#21016;&#26195;&#33402;&lt;/td&gt;
+                    &lt;td&gt;15851810833&lt;/td&gt;
+                    &lt;td&gt;&#26410;&#27880;&#20876;&lt;/td&gt;
+                    &lt;td&gt;&lt;a href=&quot;&quot;&gt;&#21024;&#38500;&lt;/a&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+                    </pre>
+                </div>
+
+                <p class="dividing-line">我是邪恶的分割线</p>
+                <div class="expand">
+                    <h2 class="h2" id="ui_crumb">
+                        Crumb
+                    </h2>
+                    <div class="example">
+                        <div class="wrap">
+                            <ol class="breadcrumb">
+                                <li><a href="">首页</a></li>
+                                <li><a href="">教室管理</a></li>
+                                <li>当前页面</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+    &lt;div class=&quot;wrap&quot;&gt;
+        &lt;ol class=&quot;breadcrumb&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&#39318;&#39029;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&#25945;&#23460;&#31649;&#29702;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&#24403;&#21069;&#39029;&#38754;&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+                    </pre>
+                </div>
+
+                <p class="dividing-line">我是邪恶的分割线</p>
+                <div class="expand">
+                    <h2 class="h2" id="ui_dialog">
+                        dialog
+                    </h2>
+                    <div class="example" style="background-color: #cccccc;">
+                        <div class="box ui-dialog-alert">
+                            <i class="warn"></i>
+                            <p>网络异常，设置失败！</p>
+                            <div class="fun">
+                                <button class="ui-btn">确定</button>
+                                <button class="ui-btn ui-btn-special">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+    &lt;div class=&quot;box ui-dialog-alert&quot;&gt;
+        &lt;i class=&quot;warn&quot;&gt;&lt;/i&gt;
+        &lt;p&gt;&#32593;&#32476;&#24322;&#24120;&#65292;&#35774;&#32622;&#22833;&#36133;&#65281;&lt;/p&gt;
+        &lt;div class=&quot;fun&quot;&gt;
+            &lt;button class=&quot;ui-btn&quot;&gt;&#30830;&#23450;&lt;/button&gt;
+            &lt;button class=&quot;ui-btn ui-btn-special&quot;&gt;&#21462;&#28040;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+
+                    <div class="example" style="background-color: #cccccc;">
+                        <div class="box ui-dialog-alert">
+                            <i class="error"></i>
+                            <p>网络异常，设置失败！</p>
+                            <div class="fun">
+                                <button class="ui-btn">确定</button>
+                                <button class="ui-btn ui-btn-special">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+    &lt;div class=&quot;box ui-dialog-alert&quot;&gt;
+        &lt;i class=&quot;error&quot;&gt;&lt;/i&gt;
+        &lt;p&gt;&#32593;&#32476;&#24322;&#24120;&#65292;&#35774;&#32622;&#22833;&#36133;&#65281;&lt;/p&gt;
+        &lt;div class=&quot;fun&quot;&gt;
+            &lt;button class=&quot;ui-btn&quot;&gt;&#30830;&#23450;&lt;/button&gt;
+            &lt;button class=&quot;ui-btn ui-btn-special&quot;&gt;&#21462;&#28040;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+
+                    <div class="example" style="background-color: #cccccc;">
+                        <div class="box ui-dialog-alert">
+                            <i class="success"></i>
+                            <p>你已成功注册！</p>
+                            <div class="fun">
+                                <button class="ui-btn">确定</button>
+                                <button class="ui-btn ui-btn-special">取消</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example" style="background-color: #cccccc;">
+                        <div class="box ui-dialog-alert">
+                            <i class="success"></i>
+                            <p>一个按钮的时候</p>
+                            <button class="ui-btn">确定</button>
+                        </div>
+                    </div>
+
+                    <div class="example" style="background-color: #cccccc;">
+                        <div class="box ui-dialog-alert">
+                            <i class="success"></i>
+                            <p class="no-button">不需要按钮的时候</p>
+                        </div>
+                    </div>
+
+
+                    <div class="example" style="background-color: #cccccc;">
+                        <div class="box ui-dialog-alert">
+                            <div class="close"><i>x</i></div>
+                            <i class="success"></i>
+                            <p>叉叉按钮的位置</p>
+                            <div class="fun">
+                                <button class="ui-btn">确定</button>
+                                <button class="ui-btn ui-btn-special">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/animateScroll.js"></script>
+<script src="../../js/radio-checkbox.js"></script>
+
+<script>
+    $(function(){
+        $(".aside li").click(function(){
+            $(this).siblings().removeClass("current");
+            $(this).addClass("current");
+            var indexH = $(this).index();
+            $('.content .expand').eq(indexH).find('h2').animatescroll({scrollSpeed:500,easing:'easeInOutSine',padding:80});
+        });
+    });
+</script>
+</body>
+</html>

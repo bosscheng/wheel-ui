@@ -1,0 +1,67 @@
+// 表格效果
+
+.table {
+  max-width: 100%;
+  border-collapse: separate; // 独立边框
+  border-spacing: 0; // 边框间距
+  border: 1px solid #eee;
+  overflow: hidden;
+  table-layout: fixed; // 表格布局算法
+  border-left-width: 0; // 移除left-width
+  border-right-width: 0; // 移除right-width
+
+  // th td 效果
+  th, td {
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    @include box-sizing;
+
+    // 移除最有一个child 的border-right 效果
+    &:last-child {
+      border-right: 0;
+    }
+  }
+  tr.l{
+    th, td {
+      text-align: left;
+    }
+  }
+  th.l, td.l {
+    text-align: left;
+  }
+
+  // td 效果
+  td {
+    background-color: $white-color;
+    border-bottom: 0;
+
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    padding-left: 16px;
+  }
+
+  // th 效果
+  th {
+    height: 40px;
+    font-weight: normal;
+    padding-left: 16px;
+
+  }
+
+  // 偶数 背景效果
+  & tr:nth-child(2n+1) td {
+    background-color: #fafafa;
+  }
+}
+
+
+
+
+
+
+
+
+

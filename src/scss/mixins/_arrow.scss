@@ -1,0 +1,28 @@
+@mixin arrow($top, $right, $bottom, $left, $color: #4CBD71) {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  // 不兼容ie8
+  transform: rotate(45deg);
+  border: 2px solid $color;
+  border-width: #{$top}px #{$right}px #{$bottom}px #{$left}px;
+  right: 10px;
+  top: 50%;
+}
+
+@mixin arrow-up {
+  @include arrow(2, 0, 0, 2);
+}
+
+@mixin arrow-right {
+  @include arrow(2, 2, 0, 0);
+}
+
+@mixin arrow-bottom {
+  @include arrow(0, 2, 2, 0);
+}
+
+@mixin arrow-left {
+  @include arrow(0, 0, 2, 2);
+}

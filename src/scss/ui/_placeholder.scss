@@ -1,0 +1,30 @@
+// chrome 浏览器
+::-webkit-input-placeholder {
+
+}
+
+// 聚焦效果
+:focus::-webkit-input-placeholder {
+
+}
+
+// firefox 浏览器
+::-moz-placeholder {
+
+}
+
+:focus::-moz-placeholder {
+
+}
+
+// ie 浏览器
+:-ms-input-placeholder {
+
+}
+
+:focus:-ms-input-placeholder {
+
+}
+
+
+

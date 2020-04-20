@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/prettify.css"/>
+    <link rel="stylesheet" href="../../scss/focusteach.css"/>
+    <link rel="stylesheet" href="../../scss/plugin/plugin_date.css"/>
+    <link rel="stylesheet" href="../../scss/plugin/plugin_select.css"/>
+    <script src="../js/run_prettify.js"></script>
+    <title>Component</title>
+</head>
+<body onload="prettyPrint();">
+<div id="header">
+    <div class="grid">
+        <h1 class="logo"><a href="/index">焦點智慧教室</a></h1>
+        <ul>
+            <li><a href="../index.html">基础</a></li>
+            <li><a href="./ui.html">组件</a></li>
+            <li><a href="./component.html">插件</a></li>
+            <li><a href="">sass功能</a></li>
+            <li><a href="">动画</a></li>
+        </ul>
+    </div>
+</div>
+<div class="main" id="main">
+    <div class="home home grid">
+        <div class="aside">
+            <div class="menu box">
+                <ul class="menu-lst">
+                    <li><a href="#component_date">日期</a></li>
+                    <li><a href="#component_select">select</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box list-wrap">
+                <div class="expand">
+                    <h2 class="h2" id="component_date">
+                        日期
+                    </h2>
+                    <div class="example">
+                        <input type="text" class="ui-input ui-date"/>
+                    </div>
+                    <h2 class="h2" id="component_select">
+                        select
+                    </h2>
+                    <div class="example clearfix" style="overflow: visible">
+                        <select name="" id="">
+                            <option value="">请选择</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/date.js"></script>
+<script src="../js/animateScroll.js"></script>
+<script src="../../js/radio-checkbox.js"></script>
+<script src="../../js/select.js"></script>
+<script>
+    $(function(){
+        /*$('.ui-date').datetimepicker({
+            timeFormat: 'HH:mm',
+            showSecond: false,
+            stepMinute:10
+        });*/
+
+        $('.ui-date').datepicker({
+            //dateFormat:'mm-dd'
+        });
+
+        $(".aside li").click(function(){
+            $(this).siblings().removeClass("current");
+            $(this).addClass("current");
+            var indexH = $(this).index();
+            $('.content .expand').eq(indexH).find('h2').animatescroll({scrollSpeed:500,easing:'easeInOutSine',padding:80});
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+//
+@mixin multi-ellipsis($multi:2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $multi;
+  -webkit-box-orient: vertical;
+}
+
+//
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

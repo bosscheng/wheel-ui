@@ -1,0 +1,18 @@
+//
+@mixin button-variant($font-color, $background, $border) {
+  color: $font-color;
+  background-color: $background;
+  border: $border;
+}
+
+// button size
+@mixin button-size($height, $font-size) {
+  font-size: $font-size;
+  height: $height;
+}
+
+// button size
+@mixin a-button-size($height, $font-size) {
+  font-size: $font-size;
+  height: $height - 4px;
+}

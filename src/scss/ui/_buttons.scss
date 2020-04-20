@@ -1,0 +1,102 @@
+// core button
+// 按钮的实现方案  初始化样式
+.ui-btn {
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+  border-radius: 4px;
+  padding: 1px 6px;
+  @include button-size($btn-normal-height, $font-special-size);
+  @include button-variant($font-normal-color, $btn-normal-bg, $btn-normal-border);
+  outline: 0;
+
+  /* hover effect */
+  &:hover,
+  &.hover {
+    box-shadow: $btn-hover-box-shadow;
+    background-color: $btn-normal-bg-hover;
+    color: $font-normal-color;
+    text-decoration: none;
+  }
+
+  /* focus effect */
+  &.focus {
+    text-decoration: none;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+  /* active effect */
+  &:active,
+  &.active {
+    @include button-variant($font-normal-color, $btn-normal-bg-active, $btn-normal-border-active);
+    box-shadow: none;
+    outline: 0;
+  }
+
+  /* disabled effect */
+  &:disabled,
+  &.disabled,
+  &[disabled]{
+    cursor: default;
+    @include button-variant($font-disabled-color, $btn-bg-disabled, $btn-disabled-border-active);
+    box-shadow: none;
+  }
+
+  // 相邻的右边的按钮，需要添加 margin left 效果。
+  + .btn{
+    margin-left: 16px;
+  }
+}
+
+
+a.ui-btn{
+  @include a-button-size($btn-normal-height, $font-special-size);
+}
+//  特殊性效果样式
+.ui-btn-special {
+  @include button-variant($font-special-color, $btn-special-bg, $btn-special-border);
+
+  &:hover,
+  &.hover {
+    background-color: $btn-special-bg-hover;
+    color: $font-special-color;
+  }
+
+  &:active,
+  &.active {
+    @include button-variant($font-special-color, $btn-special-bg-active, $btn-special-border);
+  }
+
+  &:disabled,
+  &.disabled,
+  &[disabled]{
+    cursor: default;
+    @include button-variant($font-disabled-color, $btn-bg-disabled, $btn-disabled-border-active);
+    box-shadow: none;
+  }
+}
+
+
+// 大按钮
+.ui-btn-lg{
+  @include button-size($btn-big-height, $font-special-size);
+}
+
+// 小按钮
+.ui-btn-sm{
+  @include button-size($btn-small-height, $font-normal-size);
+}
+
+
+
+
+

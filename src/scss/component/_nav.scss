@@ -1,0 +1,89 @@
+// core
+.nav-wrap{
+  width: 240px;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  li {
+
+    a, span {
+      display: block;
+      height: 16px;
+      line-height: 16px;
+      padding: 16px 0 16px 20px;
+      font-size: $font-special-size;
+      color: $font-special-color;
+
+      /* icon */
+      i {
+        margin-right: 8px;
+      }
+
+      &:hover {
+        background-color: #edfdf2;
+        text-decoration: none;
+      }
+    }
+
+    // 以 ‘icon-drop-’ 打头 ，或者 包含 ‘ icon-drop-’ 类的。
+    i[class^="icon-drop-"],i[class*=" icon-drop-"]{
+      float: right;
+      /* 由于 a 标签的 margin-left -3 像素导致的。  这边应该是 16px -3px = 13px */
+      margin: 4px 13px 0 0;
+      color: $gray-color;
+    }
+
+    /*  选中 效果 */
+    &.current {
+      position: relative;
+      a {
+        @include nav-a-current;
+      }
+
+      //
+      i{
+        color: $green-color;
+      }
+    }
+
+    &.nav-open{
+      background-color: #fafafa;
+    }
+
+  }
+
+  .child-nav-toggle {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .child-nav {
+    // hidden
+    display: none;
+    background-color: #fafafa;
+  }
+}
+
+.nav-title {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  font-weight: normal;
+  color: #999;
+}
+
+.nav-split-line {
+  height: 0px;
+  border-bottom: 1px dashed #eee;
+}
+
+
+// 横向的 导航条
+.nav-horizontal{
+
+}
+

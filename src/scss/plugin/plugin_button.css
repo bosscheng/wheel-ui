@@ -1,0 +1,79 @@
+.ui-btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 14px;
+  height: 32px;
+  color: #fff;
+  background-color: #ff9800;
+  border: 1px solid #ff9800;
+  outline: 0;
+  /* hover effect */
+  /* focus effect */
+  /* active effect */
+  /* disabled effect */ }
+  .ui-btn:hover, .ui-btn.hover {
+    box-shadow: 0 2px 4px rgba(0, 51, 0, 0.2);
+    background-color: #ff6f00;
+    color: #fff;
+    text-decoration: none; }
+  .ui-btn.focus {
+    text-decoration: none;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  .ui-btn:active, .ui-btn.active {
+    color: #fff;
+    background-color: #e68a00;
+    border: 1px solid #e68a00;
+    box-shadow: none;
+    outline: 0; }
+  .ui-btn:disabled, .ui-btn.disabled, .ui-btn[disabled] {
+    cursor: default;
+    color: #fff;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    box-shadow: none; }
+  .ui-btn + .btn {
+    margin-left: 16px; }
+
+a.ui-btn {
+  font-size: 14px;
+  height: 28px; }
+
+.ui-btn-special {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc; }
+  .ui-btn-special:hover, .ui-btn-special.hover {
+    background-color: #fff;
+    color: #333; }
+  .ui-btn-special:active, .ui-btn-special.active {
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #ccc; }
+  .ui-btn-special:disabled, .ui-btn-special.disabled, .ui-btn-special[disabled] {
+    cursor: default;
+    color: #fff;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    box-shadow: none; }
+
+.ui-btn-lg {
+  font-size: 14px;
+  height: 40px; }
+
+.ui-btn-sm {
+  font-size: 12px;
+  height: 24px; }
+
+/*# sourceMappingURL=plugin_button.css.map */

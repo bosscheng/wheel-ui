@@ -1,0 +1,36 @@
+// 面包屑 
+// 使用方式
+// <div class="wrap">
+//  <h1>面包屑</h1>
+//  <ol class="breadcrumb">
+//    <li><a href="">首页</a></li>
+//    <li><a href="">教室管理</a></li>
+//    <li>当前页面</li>
+//  </ol>
+// </div>
+//
+//
+
+.breadcrumb {
+  padding-left: 8px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #ffffff;
+  @include box();
+
+  > li {
+    display: inline-block;
+    //  利用before 实现箭头效果。
+    // 对于 + 表示 相邻的兄弟节点。
+    + li:before {
+      $nbsp: '\00a0';
+      color: #999999;
+      content: '#{$breadcrumb-divider}#{$nbsp}';
+      font-family: 'Microsoft Yahei';
+    }
+  }
+
+  > .active {
+
+  }
+}

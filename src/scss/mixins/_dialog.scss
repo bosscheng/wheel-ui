@@ -1,0 +1,6 @@
+@mixin dialog-size ($width:552px,$height: 400px) {
+  width: $width;
+  height: $height;
+  margin-top: -($height/2);
+  margin-left: -($width/2);
+}

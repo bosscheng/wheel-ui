@@ -1,0 +1,119 @@
+select {
+  display: inline-block;
+  height: 32px;
+  margin: 0;
+  border: 1px solid #ccc;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  vertical-align: middle; }
+
+select[hidden],
+select[hidden] + .ui-select {
+  display: none; }
+
+.ui-select {
+  display: inline-block;
+  *display: inline;
+  border: none;
+  *zoom: 1;
+  padding: 0;
+  /* */
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+  -webkit-animation: fadeIn .2s;
+  animation: fadeIn .2s;
+  font-size: 14px;
+  position: relative;
+  margin: 0 8px 0 0;
+  /*float: left;*/
+  /* */ }
+  .ui-select.active {
+    z-index: 3; }
+
+.ui-select ~ .ui-button {
+  vertical-align: middle; }
+
+:disabled + .ui-select {
+  opacity: .38; }
+
+.ui-select-button {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  padding: 6px 27px 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative; }
+  .ui-select-button:hover {
+    color: #000;
+    text-decoration: none; }
+
+:not(:disabled) + .ui-select > .ui-select-button:active {
+  background-color: #fff;
+  border: 1px solid #eee; }
+
+.ui-select-text {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.ui-select-icon {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  width: 0;
+  height: 0; }
+
+.ui-select-datalist {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 37px;
+  display: none;
+  max-height: 300px;
+  padding: 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: auto; }
+  .ui-select-datalist::-webkit-scrollbar {
+    height: 8px;
+    width: 8px; }
+  .ui-select-datalist::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 8px; }
+  .ui-select-datalist::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 8px; }
+  .ui-select-datalist::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa; }
+  .ui-select-datalist::-webkit-scrollbar-track-piece {
+    background-color: #ddd; }
+  .ui-select-datalist > .selected {
+    background-color: #dbfce6; }
+    .ui-select-datalist > .selected:hover {
+      background-color: #dbfce6; }
+
+.active > .ui-select-datalist {
+  display: block; }
+
+.ui-select-datalist-li {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  background-color: #fff;
+  padding: 6px 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer; }
+  .ui-select-datalist-li:empty {
+    display: none; }
+  .ui-select-datalist-li:hover {
+    background-color: #edfdf2; }
+
+/*# sourceMappingURL=plugin_select.css.map */

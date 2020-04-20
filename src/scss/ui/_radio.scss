@@ -1,0 +1,70 @@
+// hide radio
+input[type=radio] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  *left: -999px;
+}
+
+label.ui-radio,label.ui-radio-24 {
+  display: inline-block;
+  float: left;
+  margin: 12px 0;
+  height: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  overflow: hidden;
+
+  // 图标效果
+  // 改为font-icon 替换掉
+  /*i {
+    box-sizing: border-box;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 4px 8px 0 0;
+    border: 1px solid #9c9c9c;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-animation: bounceIn .2s;
+    animation: bounceIn .2s;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+
+    &.on {
+      background-color: #4cbd74;
+      box-shadow: inset 0 0 0 2px #fff;
+      border-color: #4cbd74;
+    }
+
+    &.disabled {
+      border-color: #ccc;
+      opacity: .38;
+    }
+  }*/
+
+  i {
+    @include box-sizing;
+    float: left;
+    margin-right: 8px;
+    color: $green-color;
+  }
+
+  //
+  &.disabled {
+    cursor: default;
+    color: #ccc;
+    i{
+      opacity: .38;
+    }
+  }
+
+  // 同级别的后面的对象 添加 margin-left 效果
+  + label.ui-radio,+ label.ui-radio-24 {
+    margin-left: 24px;
+  }
+}
+
+label.ui-radio-24{
+  margin: 8px 0;
+}
+

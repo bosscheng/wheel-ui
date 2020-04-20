@@ -1,0 +1,61 @@
+//
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: $font-normal-size;
+  line-height: $font-normal-line-height;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+// font  setting
+body, button, input, select, textarea, {
+  font-family: Arial, tahoma, "Microsoft Yahei", sans-serif;
+  font-size: 12px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, select, label {
+  vertical-align: middle;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  &:active {
+    outline: 0;
+  }
+  &:hover {
+    outline: 0;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table td, table th {
+  text-align: center;
+}
+
+section, article, aside, header, footer, nav, dialog, figure {
+  display: block;
+}
+
+/*  remove focus effects */
+:focus {
+  outline: 0;
+}
+

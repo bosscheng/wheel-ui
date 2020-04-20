@@ -1,0 +1,11 @@
+{
+  "name": "wheel-ui",
+  "version": "1.0.0",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
